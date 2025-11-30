@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import InventoryList from "../components/InventoryList.jsx";
 import "../css/reset.css";
 import "../css/styles.css";
 
@@ -7,7 +8,6 @@ function Shop() {
 
     // API fetch
     const apiURL = import.meta.env.BASE_URL + "models/inventory.json";
-
 
     useEffect(() => {
         async function fetchInventory() {
@@ -21,30 +21,6 @@ function Shop() {
         }
         fetchInventory();
     }, []);
-
-    function InventoryItem(item) {
-        return (
-            <div className="ItemCard">
-                <img src={import.meta.env.BASE_URL + item.img} alt={item.alt} />
-                <p>SKU: {item.SKU}</p>
-                <p>{item.name}</p>
-                <p>In stock: {item.qty}</p>
-                <p>${item.price}</p>
-            </div>
-        );
-    }
-
-    function InventoryList({ items }) {
-        return (
-            <ul className="InventoryList">
-                {items.map((item) => (
-                    <li key={item.SKU}>
-                        <InventoryItem {...item} />
-                    </li>
-                ))}
-            </ul>
-        );
-    }
 
     return (
         <div className="App">
