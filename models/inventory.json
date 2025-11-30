@@ -1,0 +1,42 @@
+[
+    {
+        "SKU": "5NRU1CDO",
+        "img": "./images/strawberryBubble.png",
+        "alt": "A drawing of a strawberry bubble tea in a cup with a cute face.",
+        "name": "POCAS Bubble Tea",
+        "qty": "10",
+        "price": "4.75"
+    },
+    {
+        "SKU": "R7OM6G8N",
+        "img": "./images/pocky.png",
+        "alt": "A drawing of matcha pocky sticks.",
+        "name": "POCKY - Milky Matcha",
+        "qty": "14",
+        "price": "3.99"
+    },
+    {
+        "SKU": "AX57EIBZ",
+        "img": "./images/peachGummies.png",
+        "alt": "A peach in front of a candy bag.",
+        "name": "KASUGAI - Peach Gummy Candy",
+        "qty": "8",
+        "price": "1.19"
+    },
+    {
+        "SKU": "2TUHKENH",
+        "img": "./images/mochi.png",
+        "alt": "A plate of mochi with a mango in front.",
+        "name": "MY/MOCHI Ice Cream - Sweet Mango",
+        "qty": "5",
+        "price": "5.79"
+    },
+    {
+        "SKU": "HVXQED52",
+        "img": "./images/ramuneDrink.png",
+        "alt": "A drawing of a bottle of ramune carbonated drink.",
+        "name": "SHIRAKIKU - Original Ramune Drink",
+        "qty": "11",
+        "price": "3.40"
+    }
+]
