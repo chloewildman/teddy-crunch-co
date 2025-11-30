@@ -22,6 +22,10 @@ I borrowed some CSS that I wrote from my previous assignments to get a starting 
 
 In my day job, I was tasked with customizing a Help Center for my team, so I have some existing exposure and comfort with CSS.
 
+### Online resources
+The bear icon comes from https://www.svgrepo.com/ with some color customization.
+The rest of the images come from https://www.canva.com/. There is a combination of stand-alone free images from Canva (such as the bubble tea, pocky, and raumune drink) along with elements that I combined to create a suitable image (such as the logo of the bears in the cart, the peach gummy candy, and mochi images)
+
 ## How My Project Meets Minimum Requirements
 
 - React Setup
