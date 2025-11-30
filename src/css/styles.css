@@ -1,0 +1,291 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
+    margin: 0 auto;
+    background-color: #ffe0f3;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    background-color: #fec0e6;
+    box-shadow: 5px 5px 5px rgba(224, 48, 156, 0.5);
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header img {
+    max-width: 100px;
+}
+
+.cartImg {
+    width: 40px;
+    padding: 4px;
+    margin: 0em 3em;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+.navBar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.home {
+    display: flex;
+    width: 70%;
+    margin-bottom: 23vh;
+}
+
+.home img {
+    width: 20vw;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+}
+
+.homeSummary {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1vh;
+}
+
+h2 {
+    font-size: 3em;
+    font-style: italic;
+}
+
+p {
+    line-height: 1.3em;
+    margin-top: 1vh;
+}
+
+p a {
+    color: rgba(224, 48, 156, 1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+}
+
+.InventoryList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-auto-rows: 1fr;
+    margin: 10px;
+}
+
+.ItemCard {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    max-width: 20vw;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.9s ease, box-shadow 0.2s ease;
+}
+
+.ItemCard img {
+    width: 60%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.ItemCard p {
+    padding: 3px;
+}
+
+.ItemCard:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+hr {
+    width: 60%;
+    border-width: 1px;
+    border-color: white;
+    opacity: 50%
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #e0309c;
+    margin-top: 1vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.toTop {
+    top: 0px;
+    right: 15%;
+    background-color: #ECF0F1;
+    color: black;
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.toTop::before {
+    content: " ↑ ";
+    color: black;
+}
+
+.navButton {
+    display: none;
+}
+
+
+.navIcon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+.navLink.active {
+    background-color: rgba(224, 48, 156, 1);
+    border: 2px solid white;
+}
+
+.navLink:hover {
+    background-color: rgba(224, 48, 156, 1);
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 750px) {
+    .InventoryList {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    .ItemCard {
+        max-width: 95%;
+    }
+
+    p {
+        font-size: 10pt;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 16pt;
+    }
+
+    header img {
+        max-width: 70px;
+    }
+
+    .navBar {
+        flex-direction: column;
+        gap: 20px;
+        display: none;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navIcon {
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        width: auto;
+        font-size: 16px;
+        box-sizing: border-box;
+        background-color: rgba(224, 48, 156, 1);
+        border: 2px solid white;
+        border-radius: 30px;
+        margin: 5px;
+    }
+
+    .navButton:checked+.navIcon+nav .navBar {
+        display: flex;
+    }
+
+    .navLink {
+        margin: 10px 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .home img {
+        width: 95%;
+    }
+
+    .home {
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 0vh;
+    }
+
+    h2 {
+        font-size: 27pt;
+    }
+
+    .homeSummary p {
+        font-size: 15pt;
+    }
+}
