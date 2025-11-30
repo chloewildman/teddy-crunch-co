@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <App />
     </Router>
 )
