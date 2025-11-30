@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className="home">
             <div>
-                <img src={`${import.meta.env.BASE_URL}images/bearInBasket.png`}></img>
+                <img src={`${import.meta.env.BASE_URL}images/bearInBasket.png`} alt="A teddy bear in a basket of peaches."></img>
             </div>
             <div className="intro">
                 <h2>Well hello there!</h2>
